@@ -1,0 +1,22 @@
+# ── NEVER PUBLISH ──────────────────────────────────────────────
+# This folder is the single source of truth for the live site.
+# Everything listed here stays in the folder but is NOT pushed online.
+#
+# Why each is excluded:
+#   sources/   — third-party copyrighted PDFs + the homestead image
+#                (link-only until the artist grants permission)
+#   *.md       — internal working docs: raw material, other people's
+#                testimonials, personal/origin notes, essay drafts, HANDOFF
+#   .claude/   — local tooling/config
+#   .DS_Store  — macOS cruft
+#
+# Anything NOT listed here (index.html, lessons.html, writing/*.html)
+# goes live exactly as it is in this folder.
+
+sources/
+*.md
+.claude/
+.DS_Store
+
+# safety: never resurrect a duplicate publish copy
+public/
