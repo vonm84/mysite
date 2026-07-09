@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <!--
-  MATT BURDYNOWSKI — PUBLIC SITE  →  /mysite
-  The clean, public face. Shows ONLY finished content; empty sections are hidden.
-  Grows as items are promoted from the workshop (/mysite/dev/).
-  No real layout/styling yet — barebones on purpose.
-  DO NOT hand-edit to add unfinished stubs here — finish them in dev/ and promote.
+  MATT BURDYNOWSKI — PUBLIC SITE / HOME  →  /mysite
+  Multi-page: Home (this file) · work.html · writing.html · lessons.html · contact.html
+  Shows only finished content. Grows as items are promoted from the workshop (/mysite/dev/).
+  Barebones on purpose. Don't hand-add unfinished stubs — finish in dev/ and promote.
 -->
 <html lang="en">
 <head>
@@ -14,6 +13,7 @@
 <style>
   body { max-width: 700px; margin: 2rem auto; padding: 0 1rem;
          font-family: Georgia, serif; line-height: 1.65; }
+  nav { margin: .5rem 0 1rem; }
   nav a { margin-right: 1rem; }
   hr { margin: 2.5rem 0; border: none; border-top: 1px solid #ddd; }
   .sub { color: #555; }
@@ -25,59 +25,29 @@
   <h1>Matt Burdynowski</h1>
   <p class="sub">they/them</p>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#work">Work</a>
-    <a href="#writing">Writing</a>
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="writing.html">Writing</a>
     <a href="lessons.html">Lessons</a>
-    <a href="#contact">Contact</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <hr>
 
-<section id="home">
-  <p>Take a look at <a href="https://www.artstation.com/artwork/QXza14" target="_blank" rel="noopener">this solarpunk image</a> by Ole Kristian Halstensen &mdash; &ldquo;Solarpunk-Inspired Off-Grid Homestead.&rdquo; You can see that the homestead is not new &mdash; exposed brick, clearly built a long time ago &mdash; and yet it has solar panels on the roof, a dome, some energy generators. It made me think about how our relationship with technology can be &mdash; one where it only steps in where necessary, and facilitates and preserves what we&rsquo;ve already built.</p>
+<p>Take a look at <a href="https://www.artstation.com/artwork/QXza14" target="_blank" rel="noopener">this solarpunk image</a> by Ole Kristian Halstensen &mdash; &ldquo;Solarpunk-Inspired Off-Grid Homestead.&rdquo; You can see that the homestead is not new &mdash; exposed brick, clearly built a long time ago &mdash; and yet it has solar panels on the roof, a dome, some energy generators. It made me think about how our relationship with technology can be &mdash; one where it only steps in where necessary, and facilitates and preserves what we&rsquo;ve already built.</p>
 
-  <p>The image to me is a perfect metaphor of how I see the role of tech in music-making. My training is both deeply embodied and close to technology, and I perceive the two as complementary forces &mdash; the diverse, unpredictable, poetic world of living beings; and the more abstract, synthetic, diffuse world of technology. In practice, I&rsquo;m an interpreter of sorts. It gives me great pleasure to translate between domains &mdash; spoken languages (I speak English, Polish and Portuguese), movement-based practices, physical theatre, dance, music &mdash; and, here, between the languages of electronic music-makers and acoustic musicians.</p>
+<p>The image to me is a perfect metaphor of how I see the role of tech in music-making. My training is both deeply embodied and close to technology, and I perceive the two as complementary forces &mdash; the diverse, unpredictable, poetic world of living beings; and the more abstract, synthetic, diffuse world of technology. In practice, I&rsquo;m an interpreter of sorts. It gives me great pleasure to translate between domains &mdash; spoken languages (I speak English, Polish and Portuguese), movement-based practices, physical theatre, dance, music &mdash; and, here, between the languages of electronic music-makers and acoustic musicians.</p>
 
-  <p>The collaborative side of music-making is a deep interest of mine &mdash; my musical training (choirs, samba, jazz) has been about live interactions, and about creativity unmediated by digital interfaces. The question I keep asking is &mdash; how can music tech be in service to the already-existing musical practices? How can it combat social isolation and bring people together through play and collaboration?</p>
+<p>The collaborative side of music-making is a deep interest of mine &mdash; my musical training (choirs, samba, jazz) has been about live interactions, and about creativity unmediated by digital interfaces. The question I keep asking is &mdash; how can music tech be in service to the already-existing musical practices? How can it combat social isolation and bring people together through play and collaboration?</p>
 
-  <p>Ethan Hein, a music educator from NYU, contrasts &ldquo;participatory music&rdquo; and &ldquo;presentational music&rdquo; in <a href="https://www.ethanhein.com/wp/2014/participatory-music-vs-presentational-music/" target="_blank" rel="noopener">this article</a>. Without discrediting tightly-rehearsed, &ldquo;closed&rdquo; music, I feel a deep lack of opportunities for music-makers of various levels to participate in creative processes together, to the benefit of everyone. The band, the improvising circle, the samba school &mdash; are where learning happens by osmosis. The shy beginner gets supported and motivated by experienced players, and the expert gets an opportunity to share and inspire the community. Everyone has a specific role, and everyone is working on a shared musical vocabulary &mdash; with opportunities for their individualities, stories and interests to shine through. To me, this &mdash; knowledge passing between people &mdash; is what education really is.</p>
+<p>Ethan Hein, a music educator from NYU, contrasts &ldquo;participatory music&rdquo; and &ldquo;presentational music&rdquo; in <a href="https://www.ethanhein.com/wp/2014/participatory-music-vs-presentational-music/" target="_blank" rel="noopener">this article</a>. Without discrediting tightly-rehearsed, &ldquo;closed&rdquo; music, I feel a deep lack of opportunities for music-makers of various levels to participate in creative processes together, to the benefit of everyone. The band, the improvising circle, the samba school &mdash; are where learning happens by osmosis. The shy beginner gets supported and motivated by experienced players, and the expert gets an opportunity to share and inspire the community. Everyone has a specific role, and everyone is working on a shared musical vocabulary &mdash; with opportunities for their individualities, stories and interests to shine through. To me, this &mdash; knowledge passing between people &mdash; is what education really is.</p>
 
-  <p>Circle dances of various cultures, such as a roda de ciranda from the north-east of Brazil, are a perfect example of this &mdash; they can include anyone, and the collective movement gives newcomers physical, kinaesthetic feedback. The expert&rsquo;s role is to share, not to be admired. The newcomer&rsquo;s role is to learn and let themself be carried, not to be intimidated. I keep wondering how this kind of ethos can be reflected and supported by digital technologies.</p>
+<p>Circle dances of various cultures, such as a roda de ciranda from the north-east of Brazil, are a perfect example of this &mdash; they can include anyone, and the collective movement gives newcomers physical, kinaesthetic feedback. The expert&rsquo;s role is to share, not to be admired. The newcomer&rsquo;s role is to learn and let themself be carried, not to be intimidated. I keep wondering how this kind of ethos can be reflected and supported by digital technologies.</p>
 
-  <p>So far, two things I&rsquo;ve made have felt like attempts at this &mdash; in quite different ways. Firstly &mdash; I ran a harmony workshop once, where I opened a spectrograph on my laptop and let a roomful of people make sounds into a microphone, watching the sound become a picture &mdash; collective painting with sound. No assessment or prompting, just open-ended, collective play in a visual/auditory feedback loop. Secondly &mdash; Tonebank, an audio plugin I was the founding developer of, whose goal was to give centre-stage to harmonic systems found in various traditional musics of Africa. The plugin is based on practical musicianship knowledge &mdash; its harmono-rhythmic structures, claves, tunings and swings are drawn from the ways people actually play.</p>
+<p>So far, two things I&rsquo;ve made have felt like attempts at this &mdash; in quite different ways. Firstly &mdash; I ran a harmony workshop once, where I opened a spectrograph on my laptop and let a roomful of people make sounds into a microphone, watching the sound become a picture &mdash; collective painting with sound. No assessment or prompting, just open-ended, collective play in a visual/auditory feedback loop. Secondly &mdash; Tonebank, an audio plugin I was the founding developer of, whose goal was to give centre-stage to harmonic systems found in various traditional musics of Africa. The plugin is based on practical musicianship knowledge &mdash; its harmono-rhythmic structures, claves, tunings and swings are drawn from the ways people actually play.</p>
 
-  <p>My dreams are of tech in service of preservation &mdash; leaving space for the vines and the raw brick, against over-designing, leaving room to play. What I truly want to make is technology which facilitates participatory music: strengthening bonds between people, motivating them to develop their musicianship, honouring the role of the body with all of its expressivity, giving experienced players a chance to help the inexperienced ones, and giving beginners a nourishing, kind and stimulating learning environment. Because regardless of the technologies we use &mdash; be it a drum stick or AI &mdash; the real power of music is in the heart, in the human connection, in community.</p>
-</section>
-
-<hr>
-
-<section id="work">
-  <h2>Work</h2>
-  <p class="sub">Tools and music I&rsquo;ve made &mdash; Tonebank (an Afro-Harmonic sequencer), Queer at Heart (an LGBTQIA+ vocal group in Porto), and more. <em>Coming soon.</em></p>
-</section>
-
-<hr>
-
-<section id="writing">
-  <h2>Writing</h2>
-  <p class="sub">Essays on the voice, the body, and what it means to sing. <em>Coming soon.</em></p>
-</section>
-
-<hr>
-
-<section id="lessons">
-  <h2>Singing lessons</h2>
-  <p>For people who think they can&rsquo;t sing: <a href="lessons.html">read more &rarr;</a></p>
-</section>
-
-<hr>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p class="sub">Get in touch. <em>Coming soon.</em></p>
-</section>
+<p>My dreams are of tech in service of preservation &mdash; leaving space for the vines and the raw brick, against over-designing, leaving room to play. What I truly want to make is technology which facilitates participatory music: strengthening bonds between people, motivating them to develop their musicianship, honouring the role of the body with all of its expressivity, giving experienced players a chance to help the inexperienced ones, and giving beginners a nourishing, kind and stimulating learning environment. Because regardless of the technologies we use &mdash; be it a drum stick or AI &mdash; the real power of music is in the heart, in the human connection, in community.</p>
 
 </body>
 </html>
