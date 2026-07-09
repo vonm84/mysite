@@ -1,69 +1,39 @@
 <!DOCTYPE html>
 <!--
-  ============================================================
-  MATT BURDYNOWSKI — SITE STRUCTURE / THOUGHT DATABASE
-  ============================================================
-  This is NOT a designed page. It is a structure + a place to
-  dump and arrange your own writing. No UX on purpose.
-
-  HOW TO USE:
-  - Each <section> is a part of the site.
-  - Grey notes (.note) are scaffolding/instructions — NOT site copy. Delete them later.
-  - [PLACEHOLDER] blocks are rough, provisional, and meant to be rewritten in YOUR voice.
-  - Long essays live as separate files in /writing so you only open the one you're working on.
-
-  The few connective phrases inside placeholders (things like "that gap is where I work")
-  are MINE and provisional — bin them. Every actual sentence in the homepage placeholder
-  is your own wording, just re-ordered.
+  MATT BURDYNOWSKI — PUBLIC SITE  →  /mysite
+  The clean, public face. Shows ONLY finished content; empty sections are hidden.
+  Grows as items are promoted from the workshop (/mysite/dev/).
+  No real layout/styling yet — barebones on purpose.
+  DO NOT hand-edit to add unfinished stubs here — finish them in dev/ and promote.
 -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matt Burdynowski — structure</title>
-<!-- Minimal readability only. Delete this whole block for fully raw HTML. Not "design". -->
+<title>Matt Burdynowski</title>
 <style>
-  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
-         font-family: Georgia, serif; line-height: 1.6; }
-  .note { color: #777; font-style: italic; border-left: 3px solid #ccc;
-          padding-left: .75rem; margin: .75rem 0; font-family: system-ui, sans-serif;
-          font-size: .9rem; }
-  .placeholder { background: #fafaf5; border: 1px dashed #bbb; padding: .75rem 1rem; }
-  .status { font-family: system-ui, sans-serif; font-size: .8rem; color: #b00; }
+  body { max-width: 700px; margin: 2rem auto; padding: 0 1rem;
+         font-family: Georgia, serif; line-height: 1.65; }
   nav a { margin-right: 1rem; }
   hr { margin: 2.5rem 0; border: none; border-top: 1px solid #ddd; }
+  .sub { color: #555; }
 </style>
 </head>
 <body>
 
 <header>
   <h1>Matt Burdynowski</h1>
-  <p class="note">Pronouns (they/them) go here, near the name. One photo goes near here too.</p>
+  <p class="sub">they/them</p>
   <nav>
     <a href="#home">Home</a>
-    <a href="#work">Selected work</a>
-    <a href="#voices">Singing &amp; arranging</a>
-    <a href="#writing">Writing / thinking</a>
     <a href="lessons.html">Lessons</a>
-    <a href="#contact">Contact</a>
   </nav>
-  <p class="note"><strong>TWO DOORS, ONE SITE.</strong> This homepage is the full picture — musician,
-  builder, translator — and it's the link for the business card / Hideaway / edtech audience
-  (they handle range well). The teaching business has its OWN warm page, <code>lessons.html</code>
-  (→ yoursite.com/lessons), written plain and jargon-free for someone who thinks they can't sing.
-  That deep link is what Matt sends to choir / network / nervous beginners, so they land straight
-  in the safe room and never wade through the developer material. Asymmetry rule: the teaching
-  HELPS the edtech case, but the dev/tech material REPELS a scared beginner — so keep technical
-  language out of lessons.html entirely, and walk beginners straight to their door.</p>
 </header>
 
 <hr>
 
-<!-- ============================================================ -->
 <section id="home">
-  <h2>Home</h2>
-
-  <p>Take a look at <a href="https://www.artstation.com/artwork/QXza14" target="_blank" rel="noopener">this solarpunk image</a> by Ole Kristian Halstensen — &ldquo;Solarpunk-Inspired Off-Grid Homestead.&rdquo; You can see that the homestead is not new &mdash; exposed brick, clearly built a long time ago &mdash; and yet it has solar panels on the roof, a dome, some energy generators. It made me think about how our relationship with technology can be &mdash; one where it only steps in where necessary, and facilitates and preserves what we&rsquo;ve already built.</p>
+  <p>Take a look at <a href="https://www.artstation.com/artwork/QXza14" target="_blank" rel="noopener">this solarpunk image</a> by Ole Kristian Halstensen &mdash; &ldquo;Solarpunk-Inspired Off-Grid Homestead.&rdquo; You can see that the homestead is not new &mdash; exposed brick, clearly built a long time ago &mdash; and yet it has solar panels on the roof, a dome, some energy generators. It made me think about how our relationship with technology can be &mdash; one where it only steps in where necessary, and facilitates and preserves what we&rsquo;ve already built.</p>
 
   <p>The image to me is a perfect metaphor of how I see the role of tech in music-making. My training is both deeply embodied and close to technology, and I perceive the two as complementary forces &mdash; the diverse, unpredictable, poetic world of living beings; and the more abstract, synthetic, diffuse world of technology. In practice, I&rsquo;m an interpreter of sorts. It gives me great pleasure to translate between domains &mdash; spoken languages (I speak English, Polish and Portuguese), movement-based practices, physical theatre, dance, music &mdash; and, here, between the languages of electronic music-makers and acoustic musicians.</p>
 
@@ -76,213 +46,13 @@
   <p>So far, two things I&rsquo;ve made have felt like attempts at this &mdash; in quite different ways. Firstly &mdash; I ran a harmony workshop once, where I opened a spectrograph on my laptop and let a roomful of people make sounds into a microphone, watching the sound become a picture &mdash; collective painting with sound. No assessment or prompting, just open-ended, collective play in a visual/auditory feedback loop. Secondly &mdash; Tonebank, an audio plugin I was the founding developer of, whose goal was to give centre-stage to harmonic systems found in various traditional musics of Africa. The plugin is based on practical musicianship knowledge &mdash; its harmono-rhythmic structures, claves, tunings and swings are drawn from the ways people actually play.</p>
 
   <p>My dreams are of tech in service of preservation &mdash; leaving space for the vines and the raw brick, against over-designing, leaving room to play. What I truly want to make is technology which facilitates participatory music: strengthening bonds between people, motivating them to develop their musicianship, honouring the role of the body with all of its expressivity, giving experienced players a chance to help the inexperienced ones, and giving beginners a nourishing, kind and stimulating learning environment. Because regardless of the technologies we use &mdash; be it a drum stick or AI &mdash; the real power of music is in the heart, in the human connection, in community.</p>
-
-  <!-- IMAGE: Ole Kristian Halstensen, "Solarpunk-Inspired Off-Grid Homestead" — embed here ONLY once the artist grants permission. Link is in place above for now. -->
-  <!-- NOTE: this is the full opening essay (~480 words). A shorter ~250-word doorway can be carved from paragraphs 1–3 + the closing line later. -->
-
 </section>
 
 <hr>
 
-<!-- ============================================================ -->
-<section id="work">
-  <h2>Selected work</h2>
-  <p class="note">Case-study feel, not a portfolio grid. Tonebank is the centrepiece.
-  LINK OUT to product sites; describe YOUR contribution and the argument the work makes.
-  Don't mirror anyone's marketing assets.</p>
-
-  <article>
-    <h3>Tonebank <span class="status">[PLACEHOLDER]</span></h3>
-    <p class="note">Founding developer. The "design rationale" piece (African harmonic theory
-    translated into design — mukos as grid rotation, Levenshtein phrase variation, etc.) is the
-    highest-leverage single artefact on the site. It can live here, or as its own writing piece,
-    or both. Product link: node-audio.com/tonebank</p>
-    <p class="note">Tie-in you already articulated: the value of the product is subjective —
-    people can feel the backbone, the real-world musical considerations, the heart put in.
-    The site's job is to make that lived process LEGIBLE.</p>
-  </article>
-
-  <article>
-    <h3>The Feel Book <span class="status">[PLACEHOLDER]</span></h3>
-    <p class="note">Full transposition + notation engine, jazz-idiomatic chord spelling.
-    One short paragraph + link out (thefeelbook.net).</p>
-  </article>
-
-  <article>
-    <h3>Anytune (watchOS) <span class="status">[PLACEHOLDER]</span></h3>
-    <p class="note">First wearable for the company; full watchOS app in SwiftUI. Short para + link.</p>
-  </article>
-
-  <article>
-    <h3>NDA work <span class="status">[PLACEHOLDER]</span></h3>
-    <p class="note">Name technologies, NOT partners or specific contexts. Kodaly rhythm app
-    (React Native); music-ed iOS MVP (React Native/VexFlow); audio-analysis tool (sudden-loudness
-    detection) — do not name the organisation or condition.</p>
-  </article>
-
-  <article>
-    <h3>Proto-Tonebank <span class="status">[OPEN QUESTION]</span></h3>
-    <p class="note">Keep as "the original p5.js/Rails sketch before any company existed", or skip?
-    You flagged "probably not" earlier. Decide later.</p>
-  </article>
-</section>
-
-<hr>
-
-<!-- ============================================================ -->
-<section id="voices">
-  <h2>Singing &amp; arranging</h2>
-  <p class="note">Working title — could be "Voices". This is NOT the "and I also do music on
-  the side" section. It is the EVIDENCE that the embodied/relational claim is real and lived.
-  Frame accordingly.</p>
-
-  <article>
-    <h3>Queer at Heart <span class="status">[PLACEHOLDER]</span></h3>
-    <p class="note">Founded Porto ~2023, ~20 members, beginner + advanced. You write all
-    arrangements, direct rehearsals, produce performances. Present without flag-waving — the site
-    filters; people who'd react badly self-deselect. Insta: @queer.at.heart. Footage → new YouTube channel.</p>
-    <p class="note">This rhymes with your VOICE spine: "our united voices, impossible to silence",
-    and your own line — the choir as "a point of support, a group of people willing to understand me, a community."</p>
-  </article>
-
-  <article>
-    <h3>The Few · KT6 <span class="status">[PLACEHOLDER]</span></h3>
-    <p class="note">Founded + directed each ~9–10 yrs; Southbank Centre, Tristan Bates; all
-    arrangements yours. The Few SoundCloud = good (use it). kt6vocalgroup.org.</p>
-  </article>
-
-  <article>
-    <h3>Arranging portfolio <span class="status">[OPEN QUESTION]</span></h3>
-    <p class="note">~50 arrangements, EN + PT, 3–11 parts, + big band + strings. Decide:
-    full PDF "available on request" vs 2–3 sample scores hosted. Second shows more.</p>
-  </article>
-
-  <article>
-    <h3>Rhythms of the City <span class="status">[PLACEHOLDER]</span></h3>
-    <p class="note">Its own thing — Brazilian percussion, lead vocalist AND percussionist, 10+ yrs,
-    tours. The line that matters: this directly informed how you think about pulse and cyclic
-    rhythm. Also the lived root of your participation/Brazil/Boal argument.</p>
-  </article>
-
-  <article>
-    <h3>Fourth Choir <span class="status">[PLACEHOLDER]</span></h3>
-    <p class="note">One line — current ensemble member, context only. thefourthchoir.com</p>
-  </article>
-</section>
-
-<hr>
-
-<!-- ============================================================ -->
-<section id="writing">
-  <h2>Writing / thinking</h2>
-  <p class="note">Where the site stops being a CV and becomes something someone bookmarks.
-  This is YOUR table of contents. Each item is its own essay, written one at a time, slowly,
-  when it's ready. Don't try to write more than one at once. Open only the file you're on.</p>
-
-  <ol>
-    <li>
-      <strong>Voice &amp; division</strong> — the core philosophy piece.
-      <span class="status">[SEEDED — <a href="writing/voice-and-division.html">open draft room</a>]</span>
-      <div class="note">The spine. Voice as centre; practitioner vs abstraction; the band is the
-      method, not the reward; separation vs participation; idiolect. This is the keystone — but
-      it's big. It may split into two.</div>
-    </li>
-    <li>
-      <strong>Voice as a gender non-conforming person</strong>
-      <span class="status">[TO WRITE — empty room]</span>
-      <div class="note">What it means to assert a voice when the defaults are gendered. Connects to
-      the arranging (voices against gendered distribution) and to Pussy LeBouton.</div>
-    </li>
-    <li>
-      <strong>Neurodiversity &amp; music</strong>
-      <span class="status">[TO WRITE — empty room]</span>
-    </li>
-    <li>
-      <strong>The room you're allowed to be loud in</strong> (space + economics)
-      <span class="status">[TO WRITE — empty room]</span>
-      <div class="note">Wanting to sing/play but worried about neighbours; who can afford a
-      rehearsal space; access. Likely your EASIEST first proper essay — it's concrete and
-      outward-facing, not about your inner life.</div>
-    </li>
-    <li>
-      <strong>How media shapes what we believe our own voices can do</strong>
-      <span class="status">[TO WRITE — empty room]</span>
-    </li>
-    <li>
-      <strong>Singing methods &amp; the voice</strong> — where do I sit? (the "what does each method
-      think your voice IS" piece)
-      <span class="status">[PLACEHOLDER — <a href="writing/singing-methods.html">open draft room</a>]</span>
-      <div class="note">Off the Claude-research essay in /sources ("What Do We Think the Voice Is?", v2,
-      30 Jun). Two candidate spines: the "voiceless player playing their own voice like an instrument"
-      (ontology) AND the moving/silenced body + decolonial movement material (embodiment — the one closest
-      to your lived work). Plus YOUR positive practice (§9/§10/§11). NOT for /lessons (too heavy); this is
-      the Hideaway / music-ed-peer reader. Points out to the "tone-deaf numbers" piece below.</div>
-    </li>
-    <li>
-      <strong>The &ldquo;tone-deaf&rdquo; numbers</strong> — a sceptical research article
-      <span class="status">[PLACEHOLDER — <a href="writing/tone-deafness.html">open draft room</a>]</span>
-      <div class="note">You pushed back on the tidy "only 1.5% are truly tone-deaf" debunk — are they
-      REALLY untrainable, and doesn't the category itself let a beginner opt out? Interrogates the
-      numbers AND the "amusia" framing. Needs hard source-verification. A space to flesh out, not aimed
-      at the student.</div>
-    </li>
-    <li>
-      <strong>Tonebank as argument</strong> (African harmonic theory → design)
-      <span class="status">[TO WRITE — can also live in Selected work]</span>
-    </li>
-    <li>
-      <strong>Embodiment — the moving, situated singing body</strong> (incl. embodied cognition / felt sense of rhythm)
-      <span class="status">[SEEDED — <a href="writing/embodiment.html">open draft room</a>]</span>
-      <div class="note">Split out of the methods essay (30 Jun): the body argument gets its own home. Gathers
-      the decolonial-movement material (pelvis taboo, Gottschild, Toledo, Sodré, Martins; song-and-movement-as-one)
-      PLUS your lived assets — dance, martial arts, Boal, proprioception/vestibular, the syncopation example.
-      Lean into dance + martial arts. Verified supports (Witek, Phillips-Silver, Shakira, Turino) — see HANDOFF.md.
-      Open: keep this as one essay, or split the rhythm-cognition thread back out into its own.</div>
-    </li>
-    <li>
-      <strong>Pussy LeBouton</strong> (the album, in this section — not a separate "music" tab)
-      <span class="status">[PLACEHOLDER]</span>
-      <div class="note">Open with the Wilchins epigraph; let the work introduce the name. 3–4 tracks.</div>
-    </li>
-    <li>
-      <strong>TEDx talk</strong> (embed + ~50–100 word framing)
-      <span class="status">[PLACEHOLDER]</span>
-      <div class="note">~10 yrs old; the consistency over time IS the point. Don't apologise for it.
-      It's your spine ten years early. Themes (verify against the actual talk before quoting):
-      the Brazilian children's-song story (= the band is the method, before Tonebank);
-      "singing as community/communion" (= Queer at Heart); "voice as identity, vulnerability"
-      (= the songwriting + the voice spine); "we have enough pop stars, we don't have enough singers";
-      teaching-by-doing (audience participation, the gag song). Pairs with the voice + embodied-cognition pieces.</div>
-    </li>
-  </ol>
-</section>
-
-<hr>
-
-<!-- ============================================================ -->
-<section id="contact">
-  <h2>Contact / what I'm looking for</h2>
-  <p class="note">Direct, honest. Signals the values one more time. ~100–200 word
-  "what I'm looking for" block, matching the homepage register.</p>
-  <div class="placeholder">
-    <p><strong>[PLACEHOLDER]</strong></p>
-    <ul>
-      <li class="note">What kind of company (founder-led music edtech / values-aligned, per the market maps).
-        From the main handoff, your own criteria: run by people who genuinely care about both music and
-        tech; real community + listening values; empathy listed as a real value; transparency about
-        working conditions; remote/async-friendly; sustainable not extractive; a place you can
-        communicate clearly about capacity, process and needs.</li>
-      <li class="note">What you want to do day-to-day: hands-on building, or anything bridging
-        musician/coder worlds; translation between domains; music education / content.</li>
-      <li class="note">Availability: part-time / fractional, ~5–25 hrs/week.</li>
-      <li class="note">Languages: English, Polish, Portuguese (fluent); French, German (basic).
-        PT = real leverage for the Brazilian cluster.</li>
-      <li class="note">Location: Porto. Email: decide hotmail vs domain. (Verify LinkedIn URL slug.)</li>
-      <li class="note">Optional "what I'm NOT looking for" line — only if honest, not performative.
-        Your honest one from the handoff: not a company where musical decisions are made by people
-        who don't respect what musical training entails.</li>
-    </ul>
-  </div>
+<section id="lessons">
+  <h2>Singing lessons</h2>
+  <p>For people who think they can&rsquo;t sing: <a href="lessons.html">read more &rarr;</a></p>
 </section>
 
 </body>
