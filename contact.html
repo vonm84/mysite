@@ -32,15 +32,24 @@
 
 <h1>Contact</h1>
 
-<!-- Minimal launch version (17 Jul 2026, Matt's choice): plain email + Instagram DM.
-     Matt may warm up the wording; contact form still parked. -->
+<!-- Minimal launch version (17 Jul 2026, Matt's choice): email + Instagram DM.
+     Email is JS-assembled so the address never appears in page source (spam-scraper protection, Matt 17 Jul).
+     Contact form (Web3Forms / Google Form) still on the table as the fuller fix. -->
 <p>The best way to reach me is email:<br>
-<a href="mailto:von_m [at] hotmail.co.uk">von_m [at] hotmail.co.uk</a></p>
+<a href="#" class="em">von_m [at] hotmail.co.uk</a></p>
 
 <p>Or send me a message on Instagram:<br>
 <a href="https://www.instagram.com/p.le.bouton/" target="_blank" rel="noopener">@p.le.bouton</a></p>
 
 <p>I speak English, Polish and Portuguese.</p>
+
+<script>
+  document.querySelectorAll('a.em').forEach(function (a) {
+    var addr = ['von', '_m'].join('') + '@' + ['hot', 'mail'].join('') + '.co.uk';
+    a.href = 'mailto:' + addr;
+    a.textContent = addr;
+  });
+</script>
 
 </body>
 </html>
