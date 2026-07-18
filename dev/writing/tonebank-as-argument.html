@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+  ESSAY ROOM: TONEBANK AS ARGUMENT — the tech essay
+  A writing surface, not a finished page. Created 18 Jul 2026 as one of the three contrasting
+  Writing-page essays (voice / TECH / body). Source material: tonebank-raw-material.md §1–5 + 5a
+  (Matt's verbatim interview spills, 6–7 Jul) + his round-3D answer from the what-is-singing
+  interview (17 Jul). The Work-page entry (work.html) covers WHAT Tonebank is; this essay makes
+  the ARGUMENT the plugin embodies.
+  Ground rule (Matt, 18 Jul): weave his verbatim sentences; never put words in his mouth;
+  flag every bridge; ask, don't guess.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tonebank as argument — draft room</title>
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font-family: Georgia, serif; line-height: 1.6; }
+  .note { color: #777; font-style: italic; border-left: 3px solid #ccc;
+          padding-left: .75rem; margin: .75rem 0; font-family: system-ui, sans-serif; font-size: .9rem; }
+  .q { background: #f5f7fa; border-left: 3px solid #88a; padding: .5rem .9rem; margin: .4rem 0;
+       font-family: system-ui, sans-serif; }
+  .draft { border: 2px solid #2a2; padding: 1rem; }
+  .bridge { background: #fff3e0; border-bottom: 2px dotted #d80; }
+  hr { margin: 2.5rem 0; border: none; border-top: 1px solid #ddd; }
+</style>
+</head>
+<body>
+
+<h1>Tonebank as argument</h1>
+<p class="note">Working title (Q1). The tech door of the Writing page. Key links live in
+tonebank-raw-material §0: the product page (node.audio/products/tonebank) and the two videos —
+&ldquo;African musical design explained&rdquo; / &ldquo;Looping with Afro-Logic&rdquo; (both showing harmonic
+loops whose harmony lengths follow the bell pattern, not the beat).</p>
+
+<hr>
+
+<h2>WOVEN DRAFT v1 (Claude assembly, 18 Jul 2026 — Matt's verbatim sentences only)</h2>
+<p class="note">Everything unmarked is Matt's verbatim wording (typo-level fixes only — see ledger).
+<span class="bridge">Orange spans are Claude's bridges</span> — veto or replace each.</p>
+
+<div class="draft">
+<p>Most music plugins made by tech people are quite cerebral &mdash; they focus on abstractions rather
+than on particularities. The electronic-music lineage is informed by a community which does not have much
+experience with the gestural dimension of music: the focus is on texture, on the spectrum, on form &mdash;
+its dance is culturally specific to an aesthetic linked to technology. As a musician I understand this as
+an aesthetic. But with music, dance and performance being something I have experience with &mdash;
+especially in the participative, collective dimension: circle dances, choral singing, percussion bands
+&mdash; I feel that the seated body produces music that is very different than the dancing body. We take
+our embodied experiences to music-making.</p>
+
+<p><span class="bridge">Tonebank &mdash; the Afro-Harmonic Sequencer I was the founding developer of
+&mdash; is, among other things, an argument about exactly this.</span> The MVP was about generating loops
+and phrases based on specific African musical traditions &mdash; crucially, modelling systems where the
+harmonic change doesn&rsquo;t happen on bars, half-bars, etc., but where it&rsquo;s related to the
+&ldquo;bell pattern&rdquo;, which we express as groups of 2 and 3 subdivisions. This results in
+naturally-syncopated structures &mdash; often there is no sound on the beat, which is what makes the body
+move. Our paradigm was to look closely at the physicality of the expression that we&rsquo;re familiar
+with, and to give tools which open that world to the electronic musician &mdash; making the acoustic, old,
+embodied traditions something valuable, treasured and foundational.</p>
+
+<p>With the translation, I think it&rsquo;s about making models of embodiment. Duple- and triple-time
+subdivisions &mdash; skipping and stepping rhythms &mdash; are certainly to do with our bipedalism. The
+swing has to do with the shape of our arms, their degrees of freedom, the mechanics of hitting a drum or
+playing a piano key &mdash; the expressivity dimension of making music. A 3223 swing has longer divisions
+where the movement of the shaker in samba is with the arm, shorter where it&rsquo;s with the wrist. But
+this is obviously a very crude model &mdash; the whole body is involved, including the lower body, which
+for cultural reasons is often invisibilised in the global north.</p>
+
+<p>With swing it&rsquo;s the same thing everywhere you look closely. In Poland, where I&rsquo;m from, folk
+music in one village can differ in subdivision lengths from another because of people&rsquo;s very-local
+dialects. There is a huge multiplicity of possibilities beyond mechanistic divisions. Musicians know this;
+tech people don&rsquo;t &mdash; but often they think they do: their mental models will not be nearly as
+accurate as the practitioners&rsquo;, because of a lack of embodied experience.</p>
+
+<p><span class="bridge">And underneath the models sits something no model reaches.</span> A totally honest
+answer, which I have heard many music practitioners agree with: the &ldquo;why&rdquo; cannot be explained
+in words, quantified. It is the joy of rhythmic tension and resolution interplaying with the internal
+senses of your own body &mdash; going back to Shakira&rsquo;s &ldquo;hips don&rsquo;t lie&rdquo; idea
+&mdash; and the inseparability of music and dance and theatre.</p>
+
+<p>So I think the hardest part is the social aspect: it&rsquo;s for the tech people &mdash; who are used
+to working with systems which are clear, efficient and &ldquo;objective&rdquo; &mdash; to open to the
+wisdom and diversity of how music has been made in the non-digital world; not with an extractive
+mentality, but with a willingness to learn. The decision to honour the roots of the project is reflected
+in the tagline &ldquo;Afro-Harmonic Sequencer&rdquo;. We took great care to name our sources and give
+credit in the manual &mdash; specific traditions, where our knowledge comes from, the fact that we
+didn&rsquo;t grow up in those traditions but that we have a passion for it. Personally, this is the most
+valuable thing to me: situating ourselves, and being open about where the knowledge we are passing comes
+from. What we are doing is approximating our own embodied experience &mdash; creating a commercial product
+which reflects it with care and a level of detail.</p>
+
+<p>In that sense, the coders should be the &ldquo;beginners&rdquo;: there is always room for musical
+growth for coders, and for technical growth for musicians. Maybe the biggest barrier is the
+commonly-shared preconceptions about one&rsquo;s own capacities &mdash; music and math being seen as
+something like &ldquo;innate talent&rdquo; rather than a learnable ability.</p>
+
+<p>Giving musicians tools which natively operate outside of the worn 12-TET, 4/4 chord changes and
+straight/shuffle swing has the potential to broaden the scope of expressivity &mdash; and to get people
+to listen in a different way.</p>
+</div>
+
+<p class="note"><strong>Ledger — every deviation from verbatim</strong> (veto any):
+(1) &ldquo;most of music plugins made by tech-people is quite cerebral - it focuses&rdquo; &rarr;
+&ldquo;Most music plugins made by tech people are quite cerebral &mdash; they focus&rdquo;;
+(2) &ldquo;it&rsquo;s dance is culturally specific&rdquo; &rarr; &ldquo;its dance&rdquo;;
+(3) the experience clause reordered for flow (original: &ldquo;but with music, dance and performance in
+general being something I have experience with (especially in the participative/collective dimension...)&rdquo;);
+(4) &ldquo;I have hear many&rdquo; &rarr; &ldquo;I have heard many&rdquo;;
+(5) &ldquo;for cultural reason&rdquo; &rarr; &ldquo;for cultural reasons&rdquo;;
+(6) &ldquo;differ in subdivision lengths from one village to another&rdquo; &rarr; &ldquo;from
+another&rdquo; (after &ldquo;one village&rdquo;); plus the added opener &ldquo;everywhere you look
+closely&rdquo; — THAT IS CLAUDE&rsquo;S, veto it;
+(7) &ldquo;it&rsquo;s the tech people, who are used to&hellip; to open&rdquo; &rarr; &ldquo;it&rsquo;s for
+the tech people &mdash; who are used to&hellip; &mdash; to open&rdquo;;
+(8) &ldquo;approximating our embodied experience&rdquo; &rarr; &ldquo;our own embodied experience&rdquo;
+(from the §4 thread reading);
+(9) &ldquo;the tools with natively operate&rdquo; &rarr; &ldquo;tools which natively operate&rdquo;;
+(10) &ldquo;they should be the &lsquo;beginners&rsquo; from the Hein article&rdquo; &rarr; Hein reference
+dropped from the sentence pending Q4;
+(11) &ldquo;music/math&rdquo; &rarr; &ldquo;music and math&rdquo;. NOT included: the career-direction line
+from §4 (reserved for a possible &ldquo;what I&rsquo;m looking for&rdquo; block elsewhere).</p>
+
+<h2>Questions for Matt</h2>
+<p class="q"><strong>Q1 — Title.</strong> &ldquo;Tonebank as argument&rdquo; is the working label. Keep, or name it
+(e.g. something around &ldquo;models of embodiment&rdquo; / &ldquo;the seated body&rdquo;)?</p>
+<p class="q"><strong>Q2 — Overlap with work.html.</strong> Paragraph 2 reuses two passages that are live on the Work
+page (bell pattern; &ldquo;our paradigm&rdquo;). Fine to repeat across pages, or should the essay say it
+differently?</p>
+<p class="q"><strong>Q3 — Shakira.</strong> &ldquo;Hips don&rsquo;t lie&rdquo; kept in. In or out?</p>
+<p class="q"><strong>Q4 — The Hein reference.</strong> &ldquo;The &lsquo;beginners&rsquo; from the Hein article&rdquo; —
+link Ethan Hein&rsquo;s piece (the Turino/participatory one in your notes), cite by name in text, or drop the
+reference?</p>
+<p class="q"><strong>Q5 — The videos.</strong> Link the two YouTube videos at the top of the essay (as on the Work
+entry), inline where the bell pattern is explained, or not in this essay?</p>
+<p class="q"><strong>Q6 — Evidence endnotes.</strong> The bipedalism claim has verified support on file
+(Phillips-Silver &amp; Trainor 2005 <em>Science</em>; MacDougall &amp; Moore 2005) — but the honest gaps are
+noted there too (skipping-vs-stepping is your extrapolation; the 3223-arm/wrist model is your own, uncited).
+Add a short endnote saying exactly that — claim + support + honest gap? (It would strengthen it for the
+music-ed/Hideaway reader.)</p>
+
+<hr>
+
+<h2>DRAFT AREA — yours</h2>
+<p class="note">Rewrites, replacements for the bridges, answers — or a fresh pass in your register.</p>
+<div class="draft" style="min-height:8rem; border-color:#aaa">
+  <p>&nbsp;</p>
+</div>
+
+</body>
+</html>
