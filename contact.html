@@ -12,6 +12,16 @@
   nav a { margin-right: 1rem; }
   hr { margin: 2.5rem 0; border: none; border-top: 1px solid #ddd; }
   .sub { color: #555; }
+  form { max-width: 480px; }
+  label { display: block; margin: 1rem 0 .25rem; }
+  input[type="text"], input[type="email"], textarea {
+    width: 100%; box-sizing: border-box; padding: .5rem;
+    font: inherit; border: 1px solid #bbb; border-radius: 4px; }
+  textarea { min-height: 8rem; resize: vertical; }
+  button { margin-top: 1rem; padding: .5rem 1.5rem; font: inherit;
+           border: 1px solid #555; border-radius: 4px; background: #f5f5f0; cursor: pointer; }
+  button:hover { background: #eee; }
+  #sent-note { display: none; background: #f3f8f3; border-left: 3px solid #2a2; padding: .5rem .9rem; }
 </style>
 </head>
 <body>
@@ -32,11 +42,31 @@
 
 <h1>Contact</h1>
 
-<!-- Minimal launch version (17 Jul 2026, Matt's choice): email + Instagram DM.
-     Email is JS-assembled so the address never appears in page source (spam-scraper protection, Matt 17 Jul).
-     Contact form (Web3Forms / Google Form) still on the table as the fuller fix. -->
-<p>The best way to reach me is email:<br>
-<a href="#" class="em">von_m [at] hotmail.co.uk</a></p>
+<!-- Web3Forms contact form (18 Jul 2026) — messages land in Matt's inbox; the email address
+     itself appears nowhere on the site. The access key below is public by design. -->
+<p id="sent-note">Thank you &mdash; your message is on its way. I&rsquo;ll get back to you soon.</p>
+
+<p>Send me a message here and it will land in my inbox:</p>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="66a5cd2d-dd9a-47b5-8657-5e258ad6e984">
+  <input type="hidden" name="subject" value="New message via mysite contact form">
+  <input type="hidden" name="redirect" value="https://vonm84.github.io/mysite/contact.html?sent=1">
+  <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+  <label for="cf-name">Your name</label>
+  <input id="cf-name" type="text" name="name" required>
+
+  <label for="cf-email">Your email</label>
+  <input id="cf-email" type="email" name="email" required>
+
+  <label for="cf-message">Message</label>
+  <textarea id="cf-message" name="message" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
+
+<hr>
 
 <p>Or send me a message on Instagram:<br>
 <a href="https://www.instagram.com/p.le.bouton/" target="_blank" rel="noopener">@p.le.bouton</a></p>
@@ -44,11 +74,9 @@
 <p>I speak English, Polish and Portuguese.</p>
 
 <script>
-  document.querySelectorAll('a.em').forEach(function (a) {
-    var addr = ['von', '_m'].join('') + '@' + ['hot', 'mail'].join('') + '.co.uk';
-    a.href = 'mailto:' + addr;
-    a.textContent = addr;
-  });
+  if (new URLSearchParams(location.search).get('sent') === '1') {
+    document.getElementById('sent-note').style.display = 'block';
+  }
 </script>
 
 </body>
