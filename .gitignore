@@ -18,5 +18,10 @@ sources/
 .claude/
 .DS_Store
 
+# work-media/ — private staging area for Work-page material (photos, video/audio
+# links, unlisted YouTube, choir pics). Dump anything here; nothing publishes until
+# we deliberately move a chosen, cleared item into the live site.
+work-media/
+
 # safety: never resurrect a duplicate publish copy
 public/
