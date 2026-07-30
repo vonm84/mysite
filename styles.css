@@ -272,13 +272,13 @@ article img { margin: .875rem 0; }
 
 /* Photo grid — uniform tiles so every row lines up and the block ends flush.
    Mixed portrait/landscape shots are centre-cropped to fit. No JS. */
-/* Six tracks, each photo spanning two — i.e. three per row. Any leftover items
-   on the final row stretch to fill it, so the block always closes as a solid
-   rectangle with no stray tiles. */
+/* Mosaic. A large lead image with smaller ones tessellating around it, and any
+   leftovers on the final row stretched to fill — so the block always closes as
+   one solid shape with tiles of varying size rather than a uniform grid. */
 .gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: 8.75rem;
+  grid-auto-rows: 6.75rem;
   gap: .375rem;
   max-width: var(--measure);
   margin: 1.125rem 0 1.375rem;
@@ -293,6 +293,8 @@ article img { margin: .875rem 0; }
   border-radius: 2px;
   cursor: zoom-in;
 }
+/* the lead image is twice the size, filling the left of the first two rows */
+.gallery img:first-child { grid-column: span 4; grid-row: span 2; }
 /* one left over on the last row → it takes the whole row */
 .gallery:has(> :nth-child(3n+1):last-child) > :last-child { grid-column: span 6; }
 /* two left over → they share the row equally */
@@ -309,10 +311,15 @@ img.shot { cursor: zoom-in; }
 }
 
 @media (max-width: 34rem) {
-  .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 7.25rem; }
-  .gallery img { grid-column: span 1; }
-  .gallery:has(> :nth-child(odd):last-child) > :last-child { grid-column: span 2; }
+  .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 6.5rem; }
+  /* reset the three-column spans, then rebuild for two */
+  .gallery img,
+  .gallery:has(> :nth-child(3n+1):last-child) > :last-child,
+  .gallery:has(> :nth-child(3n+2):last-child) > :last-child,
   .gallery:has(> :nth-child(3n+2):last-child) > :nth-last-child(2) { grid-column: span 1; }
+  .gallery img:first-child { grid-column: span 2; grid-row: span 2; }
+  /* after the lead image, an even total leaves one over — stretch it */
+  .gallery:has(> :nth-child(even):last-child) > :last-child { grid-column: span 2; }
 }
 
 /* A single wide image (e.g. a UI screenshot) — shown whole, never cropped. */
