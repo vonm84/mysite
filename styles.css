@@ -112,10 +112,14 @@ header h1 {
   text-transform: uppercase;
 }
 
-header .sub {
-  margin: .5rem 0 0;
-  font-size: .8125rem;
+/* Pronouns sit inline after the name, in brackets, at reading case. */
+header h1 .pronouns {
+  font-size: .42em;
+  font-weight: 400;
+  letter-spacing: .01em;
+  text-transform: none;
   color: var(--grey);
+  white-space: nowrap;
 }
 
 .tagline {
@@ -258,9 +262,39 @@ article h3 {
 
 article p { font-size: .90625rem; line-height: 1.6; }
 article h3 + p,
-article h3 + .sub { margin-top: 1.125rem; }
+article h3 + .sub,
+article h3 + .gallery { margin-top: 1.125rem; }
 article img { margin: .875rem 0; }
-article p:has(> img) { max-width: none; }
+
+/* Photo collage — CSS columns, so nothing is cropped and nothing exceeds the
+   text measure. No JS. */
+.gallery {
+  max-width: var(--measure);
+  margin: 1.125rem 0 1.375rem;
+  columns: 2;
+  column-gap: .4375rem;
+}
+.gallery img {
+  width: 100%;
+  margin: 0 0 .4375rem;
+  break-inside: avoid;
+  border-radius: 2px;
+}
+@media (min-width: 46rem) { .gallery { columns: 3; } }
+
+/* Media links — "Watch"/"Listen" label + separators drawn by CSS, so spacing
+   can't collapse and stays even. */
+.media .label {
+  padding-right: .5em;
+  font-size: .8125em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--grey-soft);
+}
+.media .sep {
+  padding: 0 .45em;
+  color: var(--faint);
+}
 
 /* --------------------------------------------------------------------------
    Writing index — ul.essays
