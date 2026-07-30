@@ -23,5 +23,11 @@ sources/
 # we deliberately move a chosen, cleared item into the live site.
 work-media/
 
+# dev/ — the workshop (essay draft rooms + interview archive). DE-PUBLISHED 30 Jul 2026:
+# these files hold Matt's unedited personal spills and working notes, and used to be
+# reachable at /mysite/dev/. They stay on disk (open them as local files) but are no
+# longer tracked or served. Do not re-add.
+dev/
+
 # safety: never resurrect a duplicate publish copy
 public/
