@@ -206,7 +206,10 @@ strong { font-weight: 700; }
    Home — long-form prose with one pulled-out bold line
    -------------------------------------------------------------------------- */
 
+/* Reading tier — 1.0625rem/1.7 at 38rem. Shared by the Home essay, the essay
+   pages and Lessons, so long-form prose is the same size wherever it appears. */
 body > p {
+  max-width: 38rem;
   font-size: 1.0625rem;
   line-height: 1.7;
 }
@@ -264,7 +267,8 @@ article h3 {
 }
 .role .where a { border-bottom-color: #bfcac9; }
 
-article p { font-size: .90625rem; line-height: 1.6; }
+/* Secondary tier — .9375rem, shared with the Writing page's essay blurbs. */
+article p { font-size: .9375rem; line-height: 1.6; }
 article h3 + p,
 article h3 + .sub,
 article h3 + .gallery { margin-top: 1.125rem; }
@@ -398,8 +402,8 @@ h1.essay {
 article:has(> h1.essay) > p:not(.back):not(.sub) {
   max-width: 38rem;
   margin-bottom: 1.125rem;
-  font-size: 1.1875rem;
-  line-height: 1.78;
+  font-size: 1.0625rem;   /* reading tier — matches Home and Lessons */
+  line-height: 1.7;
 }
 
 em { font-style: italic; }
