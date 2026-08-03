@@ -25,73 +25,94 @@
 <article>
 <h1 class="essay">What can electronic musicians learn from acoustic musicians?</h1>
 
-<p>I write this from both sides of a bridge: I am a practical musician, and I am a coder who has built music
-software. And I keep noticing the same thing from the coder&rsquo;s side. Take a programmer building a
-&ldquo;shaker&rdquo; function &mdash; something that makes dense, repetitive rhythms. They think of it as
-&ldquo;something dense.&rdquo; But if you have ever actually held a shaker, you know it is light and noisy, and
-relatively quiet compared to a large drum, though its high frequencies cut well. You understand that playing a
-big drum takes a lot of energy: to hit it loud you need a big arm movement. That understanding comes from the
-physical world &mdash; low and loud things take more time to hit than the shaking of a small rattle. A
-programmer without it might just take the &ldquo;shaker function,&rdquo; assign it a big-drum sound, and call
-it experimentation. Their space of possibilities is not filtered by what they know about the music. They
-don&rsquo;t consider that a pick-up note is really a re-trigger, and so has a different dynamic than a single,
-isolated note. An acoustic musician, by contrast, projects their embodied cognition onto the electronic
-instrument &mdash; knowledge about gesture, gravity, tuning, being in sync with others, being part of the
-ensemble.</p>
+<p>I&rsquo;m writing this article both as a musician with embodied and practical knowledge &mdash; and as a coder
+who has built music software.</p>
 
-<p>This is the pattern. Most music software made by tech people is quite cerebral &mdash; it focuses on
-abstractions rather than on particularities. The electronic-music lineage doesn&rsquo;t have much experience
-with the gestural dimension of music; the focus is on texture, on the spectrum, on form. As a musician I
-understand that as an aesthetic. But music, dance and performance are things I have experience with &mdash;
-especially in the participative, collective dimension: circle dances, choral singing, percussion bands &mdash;
-and I feel that the seated body produces music that is very different from the dancing body. We take our
-embodied experiences to music-making.</p>
+<p>I want to bring your attention to the following example. Say you are making an app that enables the user to
+fill in a &ldquo;shaker&rdquo; part &mdash; something that makes dense, repetitive rhythms. If you&rsquo;ve ever
+actually held any kind of shaker, you know that they are generally light and high-frequency (compared to a large
+drum). You understand that playing them takes much less energy than playing something huge that you hit with a
+stick. It&rsquo;s the kind of understanding you can only get from the physical world &mdash; it takes more time
+and energy to make a loud sound on a big thing than to shake a small rattle. Going back to the app example
+&mdash; if I abstract the &ldquo;shaker&rdquo; function, enabling the user to assign any instrument they like to
+something that is designed to be dense like a real-life shaker, then I am making something where the space of
+possibilities is not filtered by what the body of an acoustic musician knows about the music. From a coding
+perspective, a retrigger is a retrigger, and you can assign two subsequent notes any dynamics you like. From a
+playability perspective, the dynamics will be informed by context &mdash; a &ldquo;da-DUM&rdquo; pick-up has a
+specific meaning within the music. An acoustic musician has the option of projecting their embodied cognition
+onto the electronic instrument &mdash; knowledge about gesture, gravity, tuning, being in sync with others,
+being part of the ensemble.</p>
 
-<p>And underneath the models there is something no model reaches. The &ldquo;why&rdquo; cannot really be
-explained in words, or quantified. It is the joy of rhythmic tension and resolution interplaying with the
-internal senses of your own body &mdash; Shakira&rsquo;s &ldquo;hips don&rsquo;t lie&rdquo; &mdash; and the
-inseparability of music and dance and theatre.</p>
+<p>I notice that most music software made by tech people disregards the bodily dimension of music-making. There
+is an interesting paper called <a href="https://www.researchgate.net/publication/231907238_Of_Epistemic_Tools_musical_instruments_as_cognitive_extensions" target="_blank" rel="noopener">&ldquo;Of Epistemic Tools: musical
+instruments as cognitive extensions&rdquo;</a> by Thor Magnusson. In it, he writes: &ldquo;whereas the body of
+the acoustic instrument is physical, the body of the digital musical instrument is intrinsically
+theoretical.&rdquo; The electronic-music lineage doesn&rsquo;t have much experience with the gestural dimension
+of playing an instrument; the focus is in a different place &mdash; perhaps on texture, on the spectrum, on
+form. As a musician I understand that as an aesthetic. But as somebody who has experience with dance and
+theatre, I am always mindful of the role of the physical expression in music-making &mdash; especially in the
+participative, collective dimension: circle dances, choral singing, percussion bands &mdash; and I feel that the
+seated, thinking body produces music that is very different from the moving, dancing body. Whatever our body
+does or doesn&rsquo;t do, we cannot escape taking our embodied experiences to music-making.</p>
 
-<p>So the question that interests me is whether we can pass this embodied knowledge on through technology.
-Here is one concrete example. From my teaching experience, it is absolutely impossible to develop a sense of
-internal timekeeping just by staring at a screen. This is a reference we carry in our bodies. My years of
+<p>To me, the joy of music is intimately connected to the embodied experience of rhythmic tension and resolution
+interplaying with the internal senses of your own body. Here is <a href="https://www.news.com.au/entertainment/music/shakira-has-explained-the-meaning-behind-her-2006-song-hips-dont-lie/news-story/c977421bf11ccefeea5bace747bcd83b" target="_blank" rel="noopener">a quote</a> from Shakira talking about
+&ldquo;Hips Don&rsquo;t Lie&rdquo;: &ldquo;The reason why I named that song that is because, when I&rsquo;m in
+the studio, I know when a song is ready and it can be taken out of the oven, and it&rsquo;s exactly when my hips
+start moving &mdash; when my body reacts physically to a song, I know &mdash; if it&rsquo;s a dance song &mdash;
+that song is done. So I used to say to my musicians, &lsquo;my hips don&rsquo;t lie! Are they moving?
+They&rsquo;re not moving! So this is not ready.&rsquo; And that&rsquo;s how I came up with it, the idea of the
+song.&rdquo;</p>
+
+<p>So the question that interests me is whether we can pass this embodied knowledge on through technology. Here
+is one concrete example. From my teaching experience, it is absolutely impossible for someone to develop a sense
+of internal timekeeping just from staring at a screen. This is a reference we carry in our bodies. My years of
 teaching singing and musicianship tell me it is extremely individual &mdash; some of us were allowed to
-&ldquo;bounce around&rdquo; as children, some of us were told to be quiet. But the gist is that internal
-timekeeping only develops with motion; it can&rsquo;t be shown to someone. Someone has to do something. So if
-you had an app that actually shows you your weight transfer &mdash; from one foot into another &mdash;
-especially combined with some good music, it has the potential to bring your attention back to your own body:
-to develop a skill you then take with you when you switch off the app. That is a prerequisite for timekeeping,
-and other things &mdash; like clapping off the beat &mdash; can be taught on top of it.</p>
+&ldquo;bounce around&rdquo; as children, some of us were told to be still and/or quiet. But the gist is that
+internal timekeeping only develops with motion; it can&rsquo;t be shown to someone. Someone has to do something.
+Magnusson quotes Winograd and Flores: &ldquo;my ability to act comes from my familiarity with hammering, not my
+knowledge of a hammer.&rdquo; You cannot hand someone the hammer and expect the hammering. We learn through
+imitation. Perhaps if you had an app that actually shows you your weight transfer &mdash; from one foot into
+another &mdash; especially combined with some good music, then it would have the potential to bring your
+attention back to your own body: to develop a skill you then take with you when you switch off the app. That is
+a prerequisite for timekeeping, and other things &mdash; like clapping off the beat &mdash; can be taught on top
+of it.</p>
 
-<p>Why does this matter? Because practical musicianship is currently either reserved to those who have it in
-their community or in their family, or to those who have access to thorough musical education, which can be
-pricey and exclusive. And institutionalised music education is often very specialist; it originates in a
-European educational philosophy which brings a certain reductionism &mdash; studying music separately from
-movement, from storytelling &mdash; a particular vision of embodiment, and a tradition of music-theoretical
-thinking that treats certain elements as foundational, an academic focus on harmony, for example. The beauty
-of making electronic music, by contrast, is ease of access: one can get creative quite easily. There is no one
-to say that you can&rsquo;t run a busy roll on a big drum through an entire track. Art doesn&rsquo;t have
-objective rules.</p>
+<p>Why does this matter? Because practical musicianship knowledge is currently either reserved to those who have
+it running in their community or in their family, or to those who have access to thorough musical education,
+which can be pricey and exclusive. And institutionalised music education is often very specialist; it originates
+in a European educational philosophy which separates it from other performing arts and brings a certain
+reductionism &mdash; studying music separately from movement, from storytelling &mdash; a particular vision of
+embodiment, and a tradition of music-theoretical thinking that ennobles certain elements (like harmony in an
+analytic sense) and glosses over others (like swing or articulation). The beauty of making electronic music, by
+contrast, is ease of access: the potential for creativity is infinite &mdash; for good or for worse.</p>
 
-<p>So it&rsquo;s important to recognise that we are concerned with something more specific. What we are trying
-to do is get students out of the abstraction, and make tools that complement, rather than contradict, in-person
-education. The measure of such a tool is not how much it teaches you on the screen; it is how much you keep
-once you switch it off. The best of them make themselves unnecessary.</p>
+<p>Given all this, I think it is extremely important to be conscious of what it is exactly that the embodied
+knowledge of playing an acoustic instrument brings to an electronic musician &mdash; while at the same time
+keeping in mind issues of access and exclusivity. I dream of electronic-music tools which complement, rather
+than contradict, in-person education. Tools which acknowledge the player&rsquo;s body, which encourage them to
+make unmediated sound in their own surrounding, to play with others, which inspire participation and movement.
+Tools which don&rsquo;t try to be something they can&rsquo;t be &mdash; instead, they facilitate the flow of
+embodied knowledge between experienced and inexperienced players, they model and create opportunities for
+imitation, they teach the player to rely on their internal sensing, they develop skills which persist when you
+put the tool down.</p>
 
 <p>None of this is simple. Any app is mass-produced, and a one-to-many kind of transmission comes with its own
-inherent biases. We can&rsquo;t do justice to what happens in an in-person music transmission. But I
-don&rsquo;t think we need to throw the baby out with the bathwater. What is already out there is either the
-embodied knowledge of experienced players &mdash; largely inaccessible, because private lessons are costly
-&mdash; or notated music and books, which require years of study. There are obvious limits to what technology
-can carry across: you can&rsquo;t learn swing from sheet-music notation. But between the costly lesson and the
-years of books, there is room for tools that hand people back to their own bodies.</p>
+inherent biases. Magnusson writes, &ldquo;&hellip; the piano keyboard tells us that microtonality is of little
+importance (and much Western music theory has wholly subscribed to that script); the drum-sequencer that 4/4
+rhythms and semiquavers are more natural than other types; and the digital audio workstation, through its
+affordances of copying, pasting and looping, assures us that it is perfectly normal to repeat the same short
+performance over and over in the same track.&rdquo; No one-to-many tool can teach what a private music teacher
+can. There are obvious limits to what any technology can carry across: you can&rsquo;t learn swing from
+sheet-music notation. But I don&rsquo;t think we need to throw the baby out with the bathwater. Between the
+costly lesson and the years of books, there is room for tools that facilitate conversations, rather than
+monopolise them.</p>
 
-<p>In the end, I think the coders should be the beginners: there is always room for musical growth for coders,
-and for technical growth for musicians. Maybe the biggest barrier is the shared preconception that music, like
-maths, is &ldquo;innate talent&rdquo; rather than a learnable ability. What electronic musicians can learn from
-acoustic musicians is exactly what the acoustic tradition holds in the body and has never quite been able to
-write down. And the interesting question is not how to replace that knowledge with a machine &mdash; it is how
-to build a machine that gives more people a way in.</p>
+<p>In the end, I think it is essential for coders to acknowledge the value of embodied cognition. Maybe the
+biggest barrier is the shared preconception that music, like maths, is &ldquo;innate talent&rdquo; rather than a
+learnable ability. What electronic musicians can learn from acoustic musicians is exactly what the acoustic
+tradition holds in the body and has never quite been able to write down. And the interesting question is not how
+to replace that knowledge with a machine &mdash; it is how to build a machine that gives more people a way in.</p>
 
 <p class="back"><a href="writing.html">&larr; Writing</a></p>
 </article>
